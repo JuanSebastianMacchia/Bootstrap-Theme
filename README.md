@@ -39,7 +39,7 @@ npm i bootstrap
 Tambien istalamos font-awesome para los iconos
 npm i font-awesome
 
-tambien jquery y popper
+tambien jquery (bootstrap usa jquery) y popper
 npm i jquery popper.js
 Juans-MacBook-Air:Bootstrap-Theme juansebastianmacchia$ npm install jquery popper.js
 + jquery@3.3.1
@@ -54,5 +54,28 @@ si ahora vemos el archivo package.json ahora tiene las dependencias:
     "popper.js": "^1.14.3"
   }
 
-  
+  Vamos a necesitar que estas dependencias se actualicen por su solas para evitar refrescar la pagina.
+
+  para eso hacemos:
+  npm install -D gulp gulp-cli gulp-sass browser-sync
+  la -D agrega las dependencias en otra seccion aparte de developer
+
+  esto agrego estas dependencias
+    "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^2.0.1",
+    "gulp-sass": "^4.0.1"
+  }
+
+  Lo recomendable es crear un folder src donde pongo todo el codigo mio (el index, etc)
+
+  tambien en la reiz agregamos un gulpfile.js para llamar los archivos que requiero.
+
+const gulp = require ('gulp');
+const browserSync = require ('browser-sync');
+const sass = require ('gulp-sass');
+
+
+
 
