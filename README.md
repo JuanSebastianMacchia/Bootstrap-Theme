@@ -28,5 +28,31 @@ Tambien vamos a utilizar Browser sync,
 
 que es para poder tener una sevidor en tiempo real, para que la pagina de refresque sola.
 
+Lo primero ejecutamos npm init --y
+Esto crea un package.json, que tiene el nombre, la version, el repositorio, etc.
+Por ahora es solo un archivo que describe de que va nuestro proyecto.
 
+Vamos a ir instalando las dependencias que voy a necesitar:
+La primera y pricipal: bootstrap:
+npm i bootstrap
+
+Tambien istalamos font-awesome para los iconos
+npm i font-awesome
+
+tambien jquery y popper
+npm i jquery popper.js
+Juans-MacBook-Air:Bootstrap-Theme juansebastianmacchia$ npm install jquery popper.js
++ jquery@3.3.1
++ popper.js@1.14.3
+
+si ahora vemos el archivo package.json ahora tiene las dependencias:
+
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  }
+
+  
 
