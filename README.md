@@ -12,5 +12,6 @@ Webpack administra los archivos que tengo en el frontend (js, sass, etc) y los t
 
 Se puede usar con boostrap pero se puede usar algo mas sencillo:
 GULP:
+
 <img src="rm-img/gulp.png" alt="">
 
